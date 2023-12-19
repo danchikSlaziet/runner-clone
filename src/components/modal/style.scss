@@ -1,0 +1,115 @@
+.Modal {
+  top: 8%;
+  height: 100vh;
+  //max-height: 600px;
+  //max-width: 300px;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-height: 700px){
+    font-size: .75em;
+  }
+}
+
+.Modal__content {
+  border-radius: 0.5em;
+  background: #F1F0F0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  @media (max-height: 600px) {
+    padding: 0 2em 1em;
+  }
+  text-align: left;
+  //line-height: 1.5em;
+  //font-size: .85em;
+  height: max-content;
+  width: 70vw;
+  & p {
+    &:not(.Modal__header > p):not(.User__info > p) {
+      align-self: flex-start;
+      font-size: .8em;
+      margin: 0 0 1.5em;
+      @media(max-height: 700px){
+        font-size: .7em;
+      }
+      line-height: 1.65em;
+      //@media (max-height: 550px){
+      //  padding: 1em 0 0;
+      //}
+      & img {
+        display: flex;
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.Modal__header {
+  background: url("../../assets/img/modal_header_bg.png") round;
+  image-rendering: pixelated;
+  width: calc(100% + 7em);
+  min-height: 142px;
+  margin-top: -8em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & p {
+    position: absolute;
+    color: #898989;
+    //margin-top: 10%;
+    max-width: 55%;
+    font-size: 0.95rem;
+    line-height: 1.5em;
+    &:first-child{
+      z-index: 3;
+      color: #898989;
+    }
+    &:nth-child(2n){
+      //margin-top: calc(10% - 0.1em);
+      margin-top: -0.05em;
+      z-index: 2;
+      color: #686868;
+    }
+    &:nth-child(3n){
+      //margin-top: calc(10% + 0.1em);
+      margin-top: 0.1em;
+      z-index: 1;
+      color: #ECEDEB
+    }
+  }
+}
+
+.Modal__actions {
+  //width: 100%;
+  display: flex;
+  gap: 0.25em;
+  justify-content: space-between;
+  & button {
+    font-size: 1em;
+  }
+}
+
+.Modal__pickAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  min-height: 250px;
+  @media (max-height: 550px){
+    min-height: 205px;
+    & img {
+      max-width: 40%;
+      padding: 0;
+    }
+  }
+}

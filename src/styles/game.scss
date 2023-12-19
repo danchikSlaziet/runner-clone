@@ -1,0 +1,16 @@
+.Game {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-repeat: round !important;
+  background-size: contain !important;
+  image-rendering: pixelated;
+  @media (orientation: landscape) {
+    align-items: center;
+  }
+  & canvas {
+    image-rendering: pixelated
+  }
+}

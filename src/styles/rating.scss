@@ -1,0 +1,87 @@
+.Rating__userList {
+  height: 50vh;
+  overflow-y: scroll;
+  padding: 1em;
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.Rating__user  {
+  max-height: 78px;
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  padding: 1em;
+  background: url("../assets/img/rating_bg.png") round;
+  image-rendering: pixelated;
+  & p {
+    line-height: 1em !important;
+    margin: 1em !important;
+    font-size: .7rem !important;
+  }
+}
+
+$colors: #00AAFE, #A068F6, #FF6164, #96CC27;
+$repeat: 20;
+
+@for $i from 1 through $repeat {
+  .Rating__userList .Rating__user:nth-child(#{length($colors)}n+#{$i}) {
+    & .User__images  .User__avatar {
+      background: lighten(nth($colors, random(length($colors))), 1%);
+    }
+  }
+}
+
+.User__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.User__star {
+  background-size: contain !important;
+  margin: 0.25rem;
+  background: url("../assets/img/star.png") space center;
+  font-size: 0.65rem;
+  padding: 1.5em;
+  color: white;
+  text-align: center;
+  image-rendering: pixelated;
+  max-width: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.User__avatar {
+  display: none;
+  margin: 0.25rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.Rating__firstUser {
+  background: url("../assets//img/rating_bg_orange.png") round;
+  & .User__star {
+    background-size: contain !important;
+    color: transparent;
+    background: url("../assets/img/orange-diamond.png") no-repeat center;
+  }
+  & .FirstUser__header {
+    color: #E09100
+  }
+  & .User__avatar {
+    background: #FFB020
+  }
+}
+
+.FirstUser__header {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//.User__info {
+//  max-width: 75%;
+//}

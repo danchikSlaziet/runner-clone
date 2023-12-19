@@ -1,0 +1,73 @@
+.Page {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../assets/img/bg_start.png") round;
+  background-size: cover;
+  @media (orientation: landscape) {
+    background: url("../../assets/img/bg_start.png") round;
+  }
+  overflow: hidden;
+}
+
+.Page__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+
+  & img {
+    width: 100%;
+    @media (orientation: landscape) {
+      width: 70%;
+
+      @media (max-height: 550px) {
+        width: 50%;
+      }
+      }
+  }
+
+  & .Page__loading {
+    max-width: 50%;
+  }
+}
+
+.Page__actions {
+  display: grid;
+  grid-gap: 0.5em;
+  @media (orientation: landscape) {
+    display: flex;
+    gap: 0.5em;
+    font-size: 2em;
+    position: absolute;
+    bottom: 10%;
+  }
+}
+
+.Page__npc {
+  @media (orientation: portrait) {
+    //width: 130%;
+    margin-left: 7em;
+  }
+  @media (max-height: 500px){
+    width: 85% !important;
+  }
+}
+
+.Modal__hp {
+  width: 45% !important;
+  padding: 1.5em 0;
+}
+
+.Modal__diamonds {
+  image-rendering: pixelated;
+  width: 45% !important;
+  padding-top: 1em;
+}
