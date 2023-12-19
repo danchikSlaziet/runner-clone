@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/runner-clone/static/css/main.2b5415ea.css",
+    "main.js": "/runner-clone/static/js/main.986c57a1.js",
+    "static/media/pers_start.png": "/runner-clone/static/media/pers_start.2c2914d16bf4880d3571.png",
+    "static/media/bg_start.png": "/runner-clone/static/media/bg_start.4b0a9d010c772162b290.png",
+    "static/media/modal_header_bg.png": "/runner-clone/static/media/modal_header_bg.15d3403f1c45eb205200.png",
+    "static/media/woman_pick.png": "/runner-clone/static/media/woman_pick.3269a42f4d5dc6df8cfc.png",
+    "static/media/woman.png": "/runner-clone/static/media/woman.4d99abd317a448c536a9.png",
+    "static/media/man_pick.png": "/runner-clone/static/media/man_pick.0f9a986bc7ea646d8421.png",
+    "static/media/man.png": "/runner-clone/static/media/man.074429fe56b399d9db1c.png",
+    "static/media/diamonds.png": "/runner-clone/static/media/diamonds.ae9480fc4b592daf0b94.png",
+    "index.html": "/runner-clone/index.html",
+    "main.2b5415ea.css.map": "/runner-clone/static/css/main.2b5415ea.css.map",
+    "main.986c57a1.js.map": "/runner-clone/static/js/main.986c57a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b5415ea.css",
+    "static/js/main.986c57a1.js"
+  ]
+}
